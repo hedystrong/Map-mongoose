@@ -49,7 +49,9 @@ exports.findCurrentNeighborHood = async (req, res) => {
 
     res.json({ status: true, result });
   } catch (err) {
+    console.log(err);
     res.json({ status: false, message: err });
+
   }
 };
 

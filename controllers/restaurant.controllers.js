@@ -1,8 +1,11 @@
 const resModel = require("../models/restaurants.model");
 
 exports.getRestaurants = async (req, res) => {
+
+  console.log("Test");
   try {
-    const result = await resModel.find().limit(5);
+    const result = await resModel.find().limit(300);
+    console.log("Test", result);
 
     res.json({ status: true, result });
   } catch (err) {

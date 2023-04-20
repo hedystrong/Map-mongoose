@@ -26,6 +26,6 @@ app.get("/api", (req, res) => {
   res.json({ message: "Success" });
 });
 
-app.listen(process.env.port, () => {
-  console.log("server is running on " + process.env.port);
+app.listen(process.env.PORT, () => {
+  console.log("server is running on " + process.env.PORT);
 });
